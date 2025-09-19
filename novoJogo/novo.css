@@ -1,131 +1,161 @@
-
-*{
-    margin: 0;
-    padding: 0%;
+* {
+  margin: 0;
+  padding: 0%;
 }
-body,html{
-    height: 100%;
-    background: #d4d3d353;
+
+body,
+html {
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  font-family: "Orbitron", "Segoe UI", "Arial", sans-serif;
+  color: #e0e0e0;
 }
 
 .nav_bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 10px;
-    margin-bottom: 40px;
-    height: 15px;
-    background-color: #fbbf33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 10px;
+  margin-bottom: 40px;
+  height: 15px;
+  background: linear-gradient(90deg, #00c3ff 0%, #ffff1c 100%);
+  box-shadow: 0 0 20px #00c3ff88;
+  border-radius: 10px;
 }
 
 .nav_bar a {
-    color: rgba(0, 0, 0, 0.697);
-    text-decoration: none;
-    font-size: 18px;
-
+  color: #222;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Orbitron", "Segoe UI", "Arial", sans-serif;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+.nav_bar a:hover {
+  color: #00c3ff;
+  text-shadow: 0 0 8px #00c3ff, 0 0 16px #ffff1c;
 }
 
-.titulo{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom:45px;
+.titulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
 }
 
 .titulo p {
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 48px;
+  font-family: "Orbitron", "Segoe UI", "Arial", sans-serif;
+  color: #00c3ff;
+  text-shadow: 0 0 20px #00c3ff, 0 0 40px #ffff1c;
+  letter-spacing: 4px;
 }
 
-.container{
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap:  20px;
+.container {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+  backdrop-filter: blur(2px);
 }
+
 .grid_d {
-    display: flex;
-
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #ffff1c;
+  text-shadow: 0 0 10px #ffff1c, 0 0 20px #00c3ff;
 }
 
 .grid_m {
-    display: flex;
-    flex-direction: column;
-    font-size: 35px;
-    text-align: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  text-align: center;
+  gap: 10px;
 }
 
 .placar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.placar p {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0 10px;
+  color: inherit;
+  text-shadow: none;
+  letter-spacing: normal;
+}
+.placar .vs {
+  font-size: 35px;
+  color: inherit;
+  text-shadow: none;
+  margin: 0 10px;
 }
 .painel {
-    background: #C6C3C3;
-    width:500px;
-    height: 300px;
-
+  background: rgba(44, 83, 100, 0.2);
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #00c3ff;
+  box-shadow: 0 0 10px #00c3ff44;
 }
 
 .tempo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-}   
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
 
 .ButtonJogar {
-    width: 75px;
-    height: 26px;
-    border-radius: 10px;
-    font-size: 16px;
-    border: none;
-    color: aliceblue;
-    background-color: #fbbf33;
+  width: 75px;
+  height: 26px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  color: aliceblue;
+  background-color: #fbbf33;
 }
 
-.opcoes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-    
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
-.ataque2, .ataque3, .ataque4   {
-    width: 100px;
-
-}
-
-.Sataque{
-    display: none;
+.ataque2,
+.ataque3,
+.ataque4 {
+  width: 100px;
 }
 
-
+.Sataque {
+  display: none;
+}
 
 .jogadas {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 100px;
 }
 
 .jogadas div img {
-    width: 100px;
+  width: 100px;
 }
 
 .jogada1e {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
